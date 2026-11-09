@@ -1,41 +1,34 @@
 "use client";
-
 import { useEffect, useRef } from "react";
 import { animateOnScreen, cappedDpr } from "@/lib/perf";
-
-type P = { x: number; y: number; hx: number; hy: number; vx: number; vy: number };
-
-/** Full name drawn as particles that scatter away from the cursor and spring back. */
+import { stepParticles, type P } from "./particlePhysics";
+import { paintName } from "./nameLayout";
 export default function NameParticles({ text }: { text: string }) {
   const ref = useRef<HTMLCanvasElement>(null);
-
   useEffect(() => {
     const canvas = ref.current;
     const ctx = canvas?.getContext("2d");
     if (!canvas || !ctx) return;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const dpr = cappedDpr(2);
+    let dpr = cappedDpr(2);
     let particles: P[] = [];
+    const resting = document.createElement("canvas");
+    let moving = false;
     const mouse = { x: -9999, y: -9999 };
-
+    let radius = 90;
     const build = () => {
       const w = canvas.clientWidth;
       if (w === 0) return; // not laid out yet; ResizeObserver will retry
-      const fontSize = Math.min(w / (text.length * 0.52), 220);
-      const h = Math.ceil(fontSize * 1.1);
-      canvas.style.height = `${h}px`;
-      canvas.width = w * dpr;
-      canvas.height = h * dpr;
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      const family = getComputedStyle(canvas).fontFamily;
-      ctx.clearRect(0, 0, w, h);
-      ctx.fillStyle = "#fff";
-      ctx.font = `700 ${fontSize}px ${family}`;
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      ctx.fillText(text, w / 2, h / 2);
+      dpr = cappedDpr(2);
+      const fontSize = paintName(canvas, text, dpr);
+      radius = Math.min(110, Math.max(24, fontSize * 0.65));
+      mouse.x = mouse.y = -9999;
+      resting.width = canvas.width;
+      resting.height = canvas.height;
+      resting.getContext("2d")?.drawImage(canvas, 0, 0);
       const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
-      const gap = Math.max(3, Math.round(w / 260)) * dpr;
+      // Pixel indices must be integers, including at fractional mobile DPRs.
+      const gap = Math.max(1, Math.round(Math.max(1.25, w / 650) * dpr));
       particles = [];
       for (let y = 0; y < canvas.height; y += gap)
         for (let x = 0; x < canvas.width; x += gap)
@@ -43,46 +36,39 @@ export default function NameParticles({ text }: { text: string }) {
             const px = x / dpr, py = y / dpr;
             particles.push({ x: px, y: py, hx: px, hy: py, vx: 0, vy: 0 });
           }
+      moving = false;
       draw();
     };
-
     const draw = () => {
       const w = canvas.clientWidth, h = canvas.clientHeight;
       ctx.clearRect(0, 0, w, h);
       ctx.fillStyle = "rgba(201, 162, 75, 0.7)";
-      for (const p of particles) ctx.fillRect(p.x, p.y, 1.8, 1.8);
+      if (!moving) {
+        ctx.drawImage(resting, 0, 0, w, h);
+        ctx.globalCompositeOperation = "source-in";
+        ctx.fillRect(0, 0, w, h);
+        ctx.globalCompositeOperation = "source-over";
+      } else for (const p of particles) ctx.fillRect(p.x, p.y, 1.5, 1.5);
     };
-
     const tick = () => {
-      const r = 90;
-      for (const p of particles) {
-        const dx = p.x - mouse.x, dy = p.y - mouse.y;
-        const d2 = dx * dx + dy * dy;
-        if (d2 < r * r) {
-          const d = Math.sqrt(d2) || 1;
-          const f = (r - d) / r;
-          p.vx += (dx / d) * f * 6;
-          p.vy += (dy / d) * f * 6;
-        }
-        p.vx += (p.hx - p.x) * 0.06;
-        p.vy += (p.hy - p.y) * 0.06;
-        p.vx *= 0.82;
-        p.vy *= 0.82;
-        p.x += p.vx;
-        p.y += p.vy;
-      }
-      draw();
+      const pointerIn = mouse.x > -9000;
+      const energy = stepParticles(particles, mouse, radius);
+      const wasMoving = moving;
+      moving = pointerIn || energy > 0.5;
+      if (moving || wasMoving || dirty) draw();
+      dirty = false;
     };
-
     const onMove = (e: PointerEvent) => {
       const b = canvas.getBoundingClientRect();
       mouse.x = e.clientX - b.left;
       mouse.y = e.clientY - b.top;
     };
     const onLeave = () => ((mouse.x = -9999), (mouse.y = -9999));
-
     let alive = true;
-    document.fonts.ready.then(() => alive && build());
+    let dirty = true;
+    const rebuild = () => alive && (build(), (dirty = true));
+    document.fonts.ready.then(rebuild);
+    document.fonts.addEventListener("loadingdone", rebuild);
     let lastW = 0;
     const ro = new ResizeObserver(() => {
       if (canvas.clientWidth !== lastW) {
@@ -91,21 +77,26 @@ export default function NameParticles({ text }: { text: string }) {
       }
     });
     ro.observe(canvas);
-    // The spring loop only runs while the name is on screen and the tab is visible.
     let stopLoop = () => {};
     if (!reduce) {
       canvas.addEventListener("pointermove", onMove);
+      canvas.addEventListener("pointerdown", onMove);
+      canvas.addEventListener("pointerup", onLeave);
       canvas.addEventListener("pointerleave", onLeave);
+      canvas.addEventListener("pointercancel", onLeave);
       stopLoop = animateOnScreen(canvas, tick);
     }
     return () => {
       stopLoop();
       alive = false;
       ro.disconnect();
+      document.fonts.removeEventListener("loadingdone", rebuild);
       canvas.removeEventListener("pointermove", onMove);
+      canvas.removeEventListener("pointerdown", onMove);
+      canvas.removeEventListener("pointerup", onLeave);
       canvas.removeEventListener("pointerleave", onLeave);
+      canvas.removeEventListener("pointercancel", onLeave);
     };
   }, [text]);
-
   return <canvas ref={ref} aria-hidden className="block w-full font-display" />;
 }

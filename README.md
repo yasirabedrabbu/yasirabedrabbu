@@ -124,13 +124,11 @@ Have a product, a rough idea or a collaboration in mind? I'm open to meaningful 
 
 <br/>
 
-<a href="https://yasirabedrabbu.vercel.app/"><img src=".github/readme/cta-work.svg" alt="View my work" height="64" /></a>
-<a href="https://linkedin.com/in/yasirabedrabbu"><img src=".github/readme/cta-hello.svg" alt="Say hello on LinkedIn" height="64" /></a>
+<a href="https://yasirabedrabbu.vercel.app/"><img src=".github/readme/cta-work.svg" alt="View my work" height="120" /></a>
+<a href="https://linkedin.com/in/yasirabedrabbu"><img src=".github/readme/cta-hello.svg" alt="Say hello on LinkedIn" height="120" /></a>
 
 <br/><br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:43101C,50:6B1A2B,100:C9A24B&height=110&section=footer" alt="" width="100%" />
-
-<sub>Designed with curiosity. Built with intention.</sub>
+<img src=".github/readme/footer.svg" alt="Designed with curiosity. Built with intention." width="100%" />
 
 </div>
