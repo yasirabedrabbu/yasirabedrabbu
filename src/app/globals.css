@@ -97,3 +97,16 @@
 
 @keyframes marquee { to { transform: translateX(-50%); } }
 @keyframes preloader-failsafe { to { opacity: 0; visibility: hidden; } }
+
+/* Idle loops for the case-study chapter icons (see WorkIcons.tsx). */
+@media (prefers-reduced-motion: no-preference) {
+  .icon-idle {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: icon-breathe 2.8s ease-in-out 1.6s infinite;
+  }
+}
+@keyframes icon-breathe {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.35); opacity: 0.7; }
+}

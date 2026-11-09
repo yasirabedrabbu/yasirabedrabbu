@@ -11,9 +11,9 @@ export default function WorkCard({ item, index }: { item: Work; index: number })
     <li data-reveal className="case-card flex">
       <Link
         href={`/work/${item.slug}`}
-        className={`group flex h-full w-full flex-col overflow-hidden rounded-3xl border border-line bg-bg-white transition-colors duration-300 hover:border-brand ${focus}`}
+        className={`group flex h-full w-full flex-col overflow-hidden rounded-3xl border border-line bg-bg-white transition-[border-color,transform,box-shadow] duration-500 ease-out hover:-translate-y-1.5 hover:border-brand hover:shadow-[0_24px_48px_-24px_rgb(107_26_43/0.35)] motion-reduce:transition-none motion-reduce:hover:translate-y-0 ${focus}`}
       >
-        <div className="relative aspect-[4/3] overflow-hidden border-b border-line">
+        <div data-reveal-media className="relative aspect-[4/3] overflow-hidden border-b border-line">
           <Image
             src={cover.src}
             alt={cover.alt}

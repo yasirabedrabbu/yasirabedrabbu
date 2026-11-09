@@ -13,7 +13,7 @@ export default function About() {
         <div className="grid gap-[56px] lg:grid-cols-[0.8fr_1.6fr]">
           <div data-reveal className="lg:sticky lg:top-28 lg:self-start">
             <Eyebrow>About me</Eyebrow>
-            <div className="relative aspect-[4/5] max-w-screen overflow-hidden rounded-3xl bg-surface">
+            <div data-reveal-media className="relative aspect-[4/5] max-w-screen overflow-hidden rounded-3xl bg-surface">
               <Image src="/images/about-wireframes.jpg" alt="Hands sketching wireframes on paper" fill sizes="(min-width:1024px) 25vw, 80vw" className="object-cover" />
               <div className="absolute inset-x-2 bottom-2 flex items-center gap-4 rounded-xl bg-bg/90 p-2 backdrop-blur">
                 <span className="relative flex h-2.5 w-2.5" aria-hidden>

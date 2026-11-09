@@ -10,6 +10,10 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
   useEffect(() => {
     // Intercepting the wheel/touch scroll is motion the visitor asked us not to do.
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    // Touch devices already scroll natively (Lenis doesn't smooth touch here), and its
+    // anchor handling gets cancelled by the tap's own touch events. Native CSS smooth
+    // scrolling + scroll-margin handles in-page links reliably instead.
+    if (window.matchMedia("(pointer: coarse)").matches) return;
 
     const lenis = new Lenis({
       duration: 1.2,

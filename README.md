@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src=".github/readme/hero.svg" alt="Yasir Abed Rabbu - Product designer for SaaS, Healthcare and FinTech" width="100%" />
+<img src=".github/readme/hero.svg" alt="Yasir Abed Rabbu, Senior Executive UI/UX Designer for SaaS, Healthcare and FinTech" width="100%" />
 
-<br/>
+<br/><br/>
 
-<a href="https://yasirabedrabbu.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
-<a href="https://linkedin.com/in/yasirabedrabbu"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://behance.net/yasirabedrabbu"><img src="https://img.shields.io/badge/Behance-1769FF?style=for-the-badge&logo=behance&logoColor=white" alt="Behance" /></a>
-<a href="https://dribbble.com/yasirabedrabbu"><img src="https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white" alt="Dribbble" /></a>
-<a href="https://github.com/yasirabedrabbu"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+<a href="https://yasirabedrabbu.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-6B1A2B?style=for-the-badge&logo=vercel&logoColor=F6EFE6" alt="Portfolio" /></a>
+<a href="https://linkedin.com/in/yasirabedrabbu"><img src="https://img.shields.io/badge/LinkedIn-1F1F24?style=for-the-badge&logo=linkedin&logoColor=C9A24B" alt="LinkedIn" /></a>
+<a href="https://behance.net/yasirabedrabbu"><img src="https://img.shields.io/badge/Behance-1F1F24?style=for-the-badge&logo=behance&logoColor=C9A24B" alt="Behance" /></a>
+<a href="https://dribbble.com/yasirabedrabbu"><img src="https://img.shields.io/badge/Dribbble-1F1F24?style=for-the-badge&logo=dribbble&logoColor=C9A24B" alt="Dribbble" /></a>
+<a href="https://github.com/yasirabedrabbu"><img src="https://img.shields.io/badge/GitHub-1F1F24?style=for-the-badge&logo=github&logoColor=C9A24B" alt="GitHub" /></a>
 
 <img src=".github/readme/divider.svg" alt="" width="100%" />
 
@@ -19,6 +19,8 @@
 > Great design isn't about how it looks. It's about how effortlessly people can use it.
 
 I'm a **Senior Executive, UI/UX Designer at Backbencher Studio**, building digital products across **SaaS, Healthcare and FinTech**. I combine user research, visual craft and front-end fluency, so what I design is what gets built.
+
+<img src=".github/readme/stats.svg" alt="Impact: 50+ interfaces designed, 30% fewer revision cycles, 25% fewer errors and smoother handoff, 20% higher task completion" width="100%" />
 
 <table>
 <tr>
@@ -48,13 +50,15 @@ I'm a **Senior Executive, UI/UX Designer at Backbencher Studio**, building digit
 
 <div align="center"><img src=".github/readme/divider.svg" alt="" width="100%" /></div>
 
+## How I Work
+
+<img src=".github/readme/process.svg" alt="How I work: discovery and research, wireframing, visual design, developer handoff" width="100%" />
+
+<div align="center"><img src=".github/readme/divider.svg" alt="" width="100%" /></div>
+
 ## Toolkit
 
-<div align="center">
-
-<img src=".github/readme/marquee.svg" alt="Toolkit: Figma, FigJam, Wireframing, Prototyping, Design Systems, User Research, Usability Testing, HTML, CSS, Tailwind CSS, React, Next.js, Claude, ChatGPT, Figma Make, v0, Lovable, Replit" width="100%" />
-
-</div>
+<img src=".github/readme/marquee.svg" alt="Toolkit: Figma, FigJam, Wireframing, Prototyping, Design Systems, User Research, Usability Testing, Claude, ChatGPT, Figma Make, HTML, CSS, Tailwind CSS, React, Next.js, v0, Lovable, Replit" width="100%" />
 
 <div align="center"><img src=".github/readme/divider.svg" alt="" width="100%" /></div>
 
@@ -85,11 +89,7 @@ I'm a **Senior Executive, UI/UX Designer at Backbencher Studio**, building digit
 
 ## Currently Exploring
 
-<div align="center">
-
-<img src=".github/readme/terminal.svg" alt="Terminal animation listing what Yasir is exploring: design systems in code, React and Next.js, accessibility, AI-assisted design, product and engineering." width="100%" />
-
-</div>
+<img src=".github/readme/terminal.svg" alt="Terminal listing what Yasir is exploring: design systems in code, React and Next.js, accessibility, AI-assisted design, product and engineering" width="100%" />
 
 <div align="center"><img src=".github/readme/divider.svg" alt="" width="100%" /></div>
 
@@ -97,20 +97,20 @@ I'm a **Senior Executive, UI/UX Designer at Backbencher Studio**, building digit
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=yasirabedrabbu&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&icon_color=7C3AED&text_color=C9D1D9" alt="GitHub stats" height="165" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yasirabedrabbu&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=A78BFA&text_color=C9D1D9" alt="Top languages" height="165" />
+<img src="https://github-readme-stats.vercel.app/api?username=yasirabedrabbu&show_icons=true&hide_border=true&border_radius=20&bg_color=1F1F24&title_color=C9A24B&icon_color=C9A24B&text_color=F6EFE6" alt="GitHub stats" height="165" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yasirabedrabbu&layout=compact&hide_border=true&border_radius=20&bg_color=1F1F24&title_color=C9A24B&text_color=F6EFE6" alt="Top languages" height="165" />
 
 <br/>
 
-<img src="https://streak-stats.demolab.com?user=yasirabedrabbu&theme=tokyonight&hide_border=true&background=0D1117&ring=A78BFA&fire=7C3AED&currStreakLabel=A78BFA" alt="GitHub streak" />
+<img src="https://streak-stats.demolab.com?user=yasirabedrabbu&hide_border=true&border_radius=20&background=1F1F24&ring=C9A24B&fire=C9A24B&currStreakNum=F6EFE6&sideNums=F6EFE6&currStreakLabel=C9A24B&sideLabels=C9A24B&dates=B8AFA6&stroke=3A3640" alt="GitHub streak" />
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=yasirabedrabbu&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=A78BFA&line=7C3AED&point=FFFFFF&area=true&area_color=7C3AED" alt="Contribution activity graph" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=yasirabedrabbu&hide_border=true&radius=20&bg_color=1F1F24&color=F6EFE6&title_color=C9A24B&line=C9A24B&point=F6EFE6&area=true&area_color=6B1A2B" alt="Contribution activity graph" width="100%" />
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/yasirabedrabbu/yasirabedrabbu/output/github-snake-dark.svg" alt="Contribution snake animation" width="100%" />
+<img src="https://raw.githubusercontent.com/yasirabedrabbu/yasirabedrabbu/output/github-snake-brand.svg" alt="Contribution snake animation" width="100%" />
 
 </div>
 
@@ -129,7 +129,7 @@ Have a product, a rough idea or a collaboration in mind? I'm open to meaningful 
 
 <br/><br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=110&section=footer" alt="" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:43101C,50:6B1A2B,100:C9A24B&height=110&section=footer" alt="" width="100%" />
 
 <sub>Designed with curiosity. Built with intention.</sub>
 

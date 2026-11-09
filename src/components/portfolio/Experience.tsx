@@ -18,7 +18,7 @@ export default function Experience() {
               <p className="text-sm font-semibold uppercase tracking-widest text-on-brand/80">{job.period}</p>
               <h3 className="mt-3 font-display text-3xl font-bold">{job.role}</h3>
               <p className="mt-1 text-on-brand/85">{job.company}, Dhaka</p>
-              <ul className="mt-6 space-y-3">
+              <ul data-stagger className="mt-6 space-y-3">
                 {job.points.map((p) => (
                   <li key={p} className="flex gap-3 leading-relaxed text-on-brand/90"><span aria-hidden className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-on-brand/70" />{p}</li>
                 ))}

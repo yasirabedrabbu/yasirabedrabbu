@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="150" viewBox="0 0 900 150" role="img" aria-label="Impact: 50+ interfaces designed, 30% fewer revision cycles, 25% fewer errors and smoother handoff, 20% higher task completion"><title>Impact: 50+ interfaces designed, 30% fewer revision cycles, 25% fewer errors and smoother handoff, 20% higher task completion</title><style>text{font-family:'Segoe UI Variable Display','Segoe UI','SF Pro Display',-apple-system,BlinkMacSystemFont,Inter,Helvetica,Arial,sans-serif}.mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}.tile{opacity:0;animation:in .9s cubic-bezier(.16,1,.3,1) forwards}@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}.fill{transform-box:fill-box;transform-origin:left;transform:scaleX(0);animation:grow 1.4s cubic-bezier(.16,1,.3,1) forwards}@keyframes grow{to{transform:scaleX(1)}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style><g class="tile" style="animation-delay:0.00s">
+<rect x="0.5" y=".5" width="209" height="149" rx="20" fill="#6b1a2b" stroke="#f6efe6" stroke-opacity="0"/>
+<text x="22" y="62" font-size="44" font-weight="800" letter-spacing="-1.5" fill="#c9a24b">50+</text>
+<text x="22" y="92" font-size="13" fill="#f6efe6" fill-opacity=".85">End-to-end interfaces</text>
+<text x="22" y="110" font-size="13" fill="#f6efe6" fill-opacity=".85">designed</text>
+<rect x="22" y="126" width="166" height="4" rx="2" fill="#f6efe6" fill-opacity=".12"/>
+<rect class="fill" style="animation-delay:0.60s" x="22" y="126" width="166" height="4" rx="2" fill="#c9a24b"/>
+</g><g class="tile" style="animation-delay:0.15s">
+<rect x="230.5" y=".5" width="209" height="149" rx="20" fill="#2a2a30" stroke="#f6efe6" stroke-opacity="0.08"/>
+<text x="252" y="62" font-size="44" font-weight="800" letter-spacing="-1.5" fill="#f6efe6">30%</text>
+<text x="252" y="92" font-size="13" fill="#f6efe6" fill-opacity=".85">Fewer revision cycles</text>
+<text x="252" y="110" font-size="13" fill="#f6efe6" fill-opacity=".85">via design QA</text>
+<rect x="252" y="126" width="166" height="4" rx="2" fill="#f6efe6" fill-opacity=".12"/>
+<rect class="fill" style="animation-delay:0.75s" x="252" y="126" width="50" height="4" rx="2" fill="#c9a24b"/>
+</g><g class="tile" style="animation-delay:0.30s">
+<rect x="460.5" y=".5" width="209" height="149" rx="20" fill="#2a2a30" stroke="#f6efe6" stroke-opacity="0.08"/>
+<text x="482" y="62" font-size="44" font-weight="800" letter-spacing="-1.5" fill="#f6efe6">25%</text>
+<text x="482" y="92" font-size="13" fill="#f6efe6" fill-opacity=".85">Fewer errors &amp;</text>
+<text x="482" y="110" font-size="13" fill="#f6efe6" fill-opacity=".85">smoother handoff</text>
+<rect x="482" y="126" width="166" height="4" rx="2" fill="#f6efe6" fill-opacity=".12"/>
+<rect class="fill" style="animation-delay:0.90s" x="482" y="126" width="42" height="4" rx="2" fill="#c9a24b"/>
+</g><g class="tile" style="animation-delay:0.45s">
+<rect x="690.5" y=".5" width="209" height="149" rx="20" fill="#2a2a30" stroke="#f6efe6" stroke-opacity="0.08"/>
+<text x="712" y="62" font-size="44" font-weight="800" letter-spacing="-1.5" fill="#f6efe6">20%</text>
+<text x="712" y="92" font-size="13" fill="#f6efe6" fill-opacity=".85">Higher task completion</text>
+<text x="712" y="110" font-size="13" fill="#f6efe6" fill-opacity=".85">in usability tests</text>
+<rect x="712" y="126" width="166" height="4" rx="2" fill="#f6efe6" fill-opacity=".12"/>
+<rect class="fill" style="animation-delay:1.05s" x="712" y="126" width="33" height="4" rx="2" fill="#c9a24b"/>
+</g></svg>

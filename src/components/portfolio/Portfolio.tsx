@@ -16,15 +16,19 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Preloader from "./Preloader";
 import { usePortfolioFx } from "@/hooks/usePortfolioFx";
+import { useRevealFx } from "@/hooks/useRevealFx";
+import ScrollProgress from "@/components/ui/ScrollProgress";
 
 export default function Portfolio() {
   const root = useRef<HTMLDivElement>(null);
   useScrollTicks();
   usePortfolioFx(root);
+  useRevealFx(root);
 
   return (
     <div ref={root} className="bg-bg text-ink">
       <Preloader />
+      <ScrollProgress />
       <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-ink focus:px-5 focus:py-3 focus:text-on-brand">Skip to content</a>
       <Header />
       <main id="main">

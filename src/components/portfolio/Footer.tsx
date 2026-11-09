@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer className="bg-ink px-4 pb-10 text-on-brand md:px-8">
       <div className="mx-auto max-w-7xl border-t border-white/10 pt-12">
-        <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr]">
+        <div data-stagger className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-3">
               <Image src="/favicon.svg" alt="" aria-hidden width={44} height={44} className="h-11 w-11 rounded-2xl" />

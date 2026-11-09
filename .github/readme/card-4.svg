@@ -1,19 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="440" height="200" viewBox="0 0 440 200" role="img" aria-label="Mutual Interest Casting Platform">
-<defs>
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1020"/><stop offset="1" stop-color="#171232"/></linearGradient>
-<radialGradient id="glow" cx=".85" cy=".15" r=".7"><stop offset="0" stop-color="#fbbf24" stop-opacity=".30"/><stop offset="1" stop-color="#fbbf24" stop-opacity="0"/></radialGradient>
-</defs>
-<style>text{font-family:'Segoe UI',Inter,system-ui,-apple-system,Helvetica,Arial,sans-serif}</style>
-<rect x="1" y="1" width="438" height="198" rx="18" fill="url(#bg)" stroke="#ffffff" stroke-opacity=".08"/>
-<rect x="1" y="1" width="438" height="198" rx="18" fill="url(#glow)"/>
-<text x="416" y="190" font-size="64" font-weight="800" fill="none" stroke="#ffffff" stroke-opacity=".07" text-anchor="end">04</text>
-<text x="24" y="38" font-size="10.5" font-weight="700" letter-spacing="1.6" fill="#fbbf24">MARKETPLACE · ROLE-BASED</text>
-<text x="24" y="72" font-size="21" font-weight="800" fill="#ffffff">Mutual Interest Casting</text>
-<text x="24" y="102" font-size="13" fill="#9ca3af">Dancers and companies matched</text>
-<text x="24" y="120" font-size="13" fill="#9ca3af">through profile discovery and</text>
-<text x="24" y="138" font-size="13" fill="#9ca3af">mutual interest.</text>
-<text x="24" y="176" font-size="13" font-weight="700" fill="#fbbf24">View Figma project</text>
-<text x="168" y="176" font-size="14" font-weight="700" fill="#fbbf24">→<animate attributeName="x" values="168;174;168" dur="1.4s" repeatCount="indefinite"/></text>
-<g transform="translate(290,46)"><circle cy="54" r="28" fill="#fbbf24" fill-opacity=".16" stroke="#fbbf24" cx="28"><animate attributeName="cx" values="22;50;22" dur="4s" repeatCount="indefinite"/></circle><circle cy="54" r="28" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".6" cx="98"><animate attributeName="cx" values="104;76;104" dur="4s" repeatCount="indefinite"/></circle><circle cx="63" cy="54" r="5" fill="#fbbf24"><animate attributeName="r" values="0;7;0" keyTimes="0;.5;1" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" keyTimes="0;.5;1" dur="4s" repeatCount="indefinite"/></circle><text x="63" y="110" font-size="11" font-weight="700" fill="#fbbf24" text-anchor="middle" letter-spacing="1.5">MATCH</text></g>
-<rect x="1" y="1" width="438" height="198" rx="18" fill="none" stroke="#fbbf24" stroke-width="2" pathLength="1000" stroke-dasharray="110 890"><animate attributeName="stroke-dashoffset" values="0;-1000" dur="7s" repeatCount="indefinite"/></rect>
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="220" viewBox="0 0 440 220" role="img" aria-label="Mutual Interest Casting Platform"><title>Mutual Interest Casting Platform</title><style>text{font-family:'Segoe UI Variable Display','Segoe UI','SF Pro Display',-apple-system,BlinkMacSystemFont,Inter,Helvetica,Arial,sans-serif}.mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}.ping{transform-box:fill-box;transform-origin:center;animation:ping 1.8s ease-out infinite}@keyframes ping{to{transform:scale(3);opacity:0}}.breathe{animation:br 5s ease-in-out infinite alternate}@keyframes br{to{opacity:.55}}.sweep{animation:sw 4.5s cubic-bezier(.65,0,.35,1) infinite}@keyframes sw{to{transform:translateX(680px)}}.nudge{animation:nd 1.6s ease-in-out infinite}@keyframes nd{50%{transform:translate(2px,-2px)}}@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<defs><radialGradient id="g" cx=".9" cy=".05" r=".75"><stop offset="0" stop-color="#c9a24b" stop-opacity="0.28"/><stop offset="1" stop-color="#c9a24b" stop-opacity="0"/></radialGradient>
+<clipPath id="c"><rect width="440" height="220" rx="22"/></clipPath></defs>
+<g clip-path="url(#c)"><rect width="440" height="220" fill="#1f1f24"/><rect class="breathe" width="440" height="220" fill="url(#g)"/>
+<rect class="sweep" x="-120" y="0" width="120" height="2" fill="#c9a24b"/></g>
+<rect x=".5" y=".5" width="439" height="219" rx="21.5" fill="none" stroke="#f6efe6" stroke-opacity=".09"/>
+<text x="350" y="204" font-size="78" font-weight="800" fill="none" stroke="#f6efe6" stroke-opacity=".07" text-anchor="end">04</text>
+<text x="28" y="42" font-size="10.5" font-weight="700" letter-spacing="1.6" fill="#c9a24b">MARKETPLACE &#183; ROLE-BASED</text>
+
+<text x="28" y="80" font-size="23" font-weight="800" letter-spacing="-.5" fill="#f6efe6">Mutual Interest Casting</text>
+<text x="28" y="112" font-size="13.5" fill="#f6efe6" fill-opacity=".68">Dancers and companies matched</text><text x="28" y="131" font-size="13.5" fill="#f6efe6" fill-opacity=".68">through profile discovery and</text><text x="28" y="150" font-size="13.5" fill="#f6efe6" fill-opacity=".68">mutual interest.</text>
+<text x="28" y="190" font-size="13.5" font-weight="700" fill="#c9a24b">View Figma project</text>
+<circle cx="392" cy="185" r="18" fill="#c9a24b"/><g class="nudge"><path d="M386 191l12-12M389 179h9v9" fill="none" stroke="#1f1f24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
 </svg>

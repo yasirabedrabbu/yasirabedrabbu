@@ -10,6 +10,11 @@ import {
   HelpCircleIcon,
   Mail01Icon,
   StarIcon,
+  Target02Icon,
+  GitBranchIcon,
+  ChartIncreaseIcon,
+  PlayCircleIcon,
+  Compass01Icon,
 } from "@hugeicons/core-free-icons";
 
 const eyebrowIcons: Record<string, typeof UserIcon> = {
@@ -22,6 +27,14 @@ const eyebrowIcons: Record<string, typeof UserIcon> = {
   "Education & certifications": Mortarboard01Icon,
   FAQ: HelpCircleIcon,
   Contact: Mail01Icon,
+  // Case-study chapters
+  Challenge: Target02Icon,
+  Approach: Route01Icon,
+  "Key decisions": GitBranchIcon,
+  Solution: Layers01Icon,
+  Impact: ChartIncreaseIcon,
+  "Private walkthrough": PlayCircleIcon,
+  "Keep exploring": Compass01Icon,
 };
 
 export default function Eyebrow({ children, light = false, className = "" }: { children: string; light?: boolean; className?: string }) {
