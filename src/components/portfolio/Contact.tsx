@@ -17,12 +17,13 @@ const ways = [
   { label: "WhatsApp", hint: "Quick questions", icon: WhatsappIcon, href: `https://wa.me/${profile.phone.replace(/\D/g, "")}`, external: true },
 ];
 
-const socials = [
-  { name: "LinkedIn", icon: Linkedin01Icon },
-  { name: "Dribbble", icon: DribbbleIcon },
-  { name: "Behance", icon: BehanceIcon },
-  { name: "X", icon: NewTwitterIcon },
-];
+/* Keyed by name so the icons can never drift out of step with the link order. */
+const socialIcons: Record<string, typeof Linkedin01Icon> = {
+  LinkedIn: Linkedin01Icon,
+  Dribbble: DribbbleIcon,
+  Behance: BehanceIcon,
+  X: NewTwitterIcon,
+};
 
 export default function Contact() {
   return (
@@ -74,10 +75,10 @@ export default function Contact() {
             </ul>
 
             <ul className="mt-6 flex flex-wrap gap-3" aria-label="Social profiles">
-              {socials.map((s, i) => (
+              {socialLinks.map((s) => (
                 <li key={s.name}>
-                  <a href={socialLinks[i].href} target="_blank" rel="noreferrer" aria-label={`${s.name} (opens in new tab)`} className="group inline-flex items-center gap-2.5 rounded-full border border-white/15 px-5 py-3 text-sm font-medium transition hover:border-on-brand hover:bg-on-brand hover:text-ink focus-visible:outline-2 focus-visible:outline-on-brand">
-                    <HugeiconsIcon icon={s.icon} size={18} aria-hidden />
+                  <a href={s.href} target="_blank" rel="noreferrer" aria-label={`${s.name} (opens in new tab)`} className="group inline-flex items-center gap-2.5 rounded-full border border-white/15 px-5 py-3 text-sm font-medium transition hover:border-on-brand hover:bg-on-brand hover:text-ink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-on-brand">
+                    <HugeiconsIcon icon={socialIcons[s.name] ?? Linkedin01Icon} size={18} aria-hidden />
                     {s.name}
                   </a>
                 </li>

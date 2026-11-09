@@ -3,19 +3,13 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import { Download01Icon } from "@hugeicons/core-free-icons";
 import { focusOnDark } from "@/lib/ui";
 import { profile } from "@/data/cv";
-import { socialLinks } from "@/data/site";
+import { navGroups, socialLinks } from "@/data/site";
 import ArrowUpRight from "@/components/ui/ArrowUpRight";
 
 const CV_HREF = "/Yasir-Abed-Rabbu-CV.pdf";
 
-const nav = [
-  ["About", "#about"],
-  ["Experience", "#experience"],
-  ["Work", "#work"],
-  ["Skills", "#skills"],
-  ["FAQ", "#faq"],
-  ["Contact", "#contact"],
-];
+/* Same source as the header and mobile menu, so every section stays reachable. */
+const nav = navGroups.flatMap((g) => g.links.map((l) => [l.label, l.href] as const));
 
 const heading = "font-display text-xs font-bold uppercase tracking-[0.25em] text-on-brand/70";
 
@@ -42,7 +36,7 @@ export default function Footer() {
 
           <nav aria-label="Footer">
             <h2 className={heading}>Explore</h2>
-            <ul className="mt-5 flex flex-col gap-3 text-sm">
+            <ul className="mt-5 grid grid-cols-2 gap-x-6 gap-y-3 text-sm">
               {nav.map(([label, href]) => (
                 <li key={href}>
                   <a href={href} className={`text-on-brand/75 transition-colors hover:text-on-brand ${focusOnDark}`}>{label}</a>
@@ -56,7 +50,7 @@ export default function Footer() {
             <ul className="mt-5 flex flex-col gap-3 text-sm">
               {socialLinks.map((s) => (
                 <li key={s.name}>
-                  <a href={s.href} target="_blank" rel="noreferrer" className={`text-on-brand/75 transition-colors hover:text-on-brand ${focusOnDark}`}>
+                  <a href={s.href} target="_blank" rel="noreferrer" aria-label={`${s.name} (opens in new tab)`} className={`text-on-brand/75 transition-colors hover:text-on-brand ${focusOnDark}`}>
                     {s.name}
                   </a>
                 </li>

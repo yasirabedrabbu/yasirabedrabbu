@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "./globals.css";
 import SmoothScroll from "@/components/layout/SmoothScroll";
@@ -10,6 +10,10 @@ const title = "Yasir Abed Rabbu — UI/UX Designer";
 const description =
   "UI/UX designer in Dhaka, Bangladesh, turning complex SaaS, healthcare and fintech workflows into simple, trustworthy experiences.";
 const ogAlt = "Yasir Abed Rabbu — UI/UX designer based in Dhaka, Bangladesh.";
+
+export const viewport: Viewport = {
+  themeColor: "#f6efe6",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -71,6 +75,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
         </Script>
         <noscript>
+          {/* Tracking pixel: must be a plain <img>, next/image can't run without JS. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             height="1"
             width="1"

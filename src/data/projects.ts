@@ -15,7 +15,7 @@ export const projects: Project[] = [
       "modern booking convenience with the resort's rich heritage. The " +
       "interface is designed to get families excited about their trip while " +
       "making the user journey seamless. 👨‍👩‍👧‍👦✨",
-    image: "/images/project-alpinevista.jpg",
+    image: "/images/project-alpinevista.webp",
     href: "https://dribbble.com/shots/26802463-AlpineVista-Ski-Resort-Winter-Vacation-Website",
   },
   {
@@ -26,7 +26,7 @@ export const projects: Project[] = [
       "autonomous threat defence platform built for the modern enterprise. " +
       "The brief: stop looking like every other \"we detect threats\" SaaS " +
       "site. Stop selling fear. Start selling decisive action.",
-    image: "/images/project-hexon.png",
+    image: "/images/project-hexon.webp",
     href: "https://dribbble.com/shots/27412079-HEXON-Cybersecurity-SaaS-Landing-Page",
   },
   {
@@ -38,7 +38,7 @@ export const projects: Project[] = [
       "94% of first impressions on a website are design-related — not " +
       "content, not pricing, not the product. Just design. Pure visual " +
       "judgement.",
-    image: "/images/project-void-studio.png",
+    image: "/images/project-void-studio.webp",
     href: "https://dribbble.com/shots/27359253-VOID-STUDIO-Dark-Agency-Landing-Page-UI",
   },
 ];

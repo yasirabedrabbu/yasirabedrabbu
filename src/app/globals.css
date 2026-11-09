@@ -11,11 +11,15 @@
   }
 
   html {
-    scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
     /* `clip` (not `hidden`) trims stray horizontal bleed without creating a
        scroll container, so `position: sticky` sections keep working. */
     overflow-x: clip;
+  }
+
+  /* Native smooth scrolling only when Lenis isn't driving the page. */
+  html:not(.lenis) {
+    scroll-behavior: smooth;
   }
 
   body {

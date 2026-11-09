@@ -90,7 +90,7 @@ export default function HeroPortrait() {
             aria-label={`Show contact details for ${profile.name}`}
             className={`absolute inset-0 rounded-[2rem] [backface-visibility:hidden] ${focus}`}
           >
-            <span className="absolute bottom-5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-ink/85 px-4 py-2 text-xs font-semibold text-on-brand">Tap to flip</span>
+            <span aria-hidden className="absolute bottom-5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-ink/85 px-4 py-2 text-xs font-semibold text-on-brand">Flip for contact details</span>
           </button>
         </div>
       </div>

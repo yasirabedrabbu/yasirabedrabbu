@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Lenis from "lenis";
+import "lenis/dist/lenis.css";
 import { gsap } from "@/lib/gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -14,9 +15,11 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
+      // Route in-page #anchor links through Lenis; native smooth scroll fights its loop.
+      anchors: true,
     });
 
-    // GSAP ScrollTrigger কে Lenis এর scroll এ sync করি
+    // Keep ScrollTrigger in sync with Lenis-driven scroll.
     lenis.on("scroll", ScrollTrigger.update);
 
     const onTick = (time: number) => {

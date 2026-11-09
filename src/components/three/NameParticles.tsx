@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { cappedDpr } from "@/lib/perf";
+import { animateOnScreen, cappedDpr } from "@/lib/perf";
 
 type P = { x: number; y: number; hx: number; hy: number; vx: number; vy: number };
 
@@ -16,7 +16,6 @@ export default function NameParticles({ text }: { text: string }) {
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const dpr = cappedDpr(2);
     let particles: P[] = [];
-    let raf = 0;
     const mouse = { x: -9999, y: -9999 };
 
     const build = () => {
@@ -73,7 +72,6 @@ export default function NameParticles({ text }: { text: string }) {
         p.y += p.vy;
       }
       draw();
-      raf = requestAnimationFrame(tick);
     };
 
     const onMove = (e: PointerEvent) => {
@@ -93,13 +91,15 @@ export default function NameParticles({ text }: { text: string }) {
       }
     });
     ro.observe(canvas);
+    // The spring loop only runs while the name is on screen and the tab is visible.
+    let stopLoop = () => {};
     if (!reduce) {
       canvas.addEventListener("pointermove", onMove);
       canvas.addEventListener("pointerleave", onLeave);
-      tick();
+      stopLoop = animateOnScreen(canvas, tick);
     }
     return () => {
-      cancelAnimationFrame(raf);
+      stopLoop();
       alive = false;
       ro.disconnect();
       canvas.removeEventListener("pointermove", onMove);
