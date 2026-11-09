@@ -44,7 +44,7 @@ export default function Process() {
         <div className="lg:sticky lg:top-28 lg:self-start">
           <div data-reveal>
             <Eyebrow>Process</Eyebrow>
-            <h2 id="process-title" className="font-display text-5xl font-bold leading-[0.95] tracking-tight md:text-7xl">
+            <h2 id="process-title" className="text-balance font-display text-5xl font-bold leading-[0.95] tracking-tight md:text-7xl">
               Research to handoff, <span className="italic text-brand">without friction</span>
             </h2>
           </div>
@@ -88,8 +88,9 @@ export default function Process() {
                 >
                   <div className="flex items-center justify-between">
                     <span className={`text-xs font-bold uppercase tracking-[0.2em] ${on ? "text-brand" : "text-ink-soft"}`}>Step 0{i + 1}</span>
-                    <span className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors duration-500 ${on ? "bg-brand text-on-brand" : i < activeStep ? "bg-surface text-brand" : "bg-surface text-ink-soft"}`}>
-                      {on ? "In progress" : i < activeStep ? "Done" : "Up next"}
+                    <span className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors duration-500 ${on ? "bg-brand text-on-brand" : "bg-surface text-ink-soft"}`}>
+                      <span className="sr-only">Deliverable: </span>
+                      {s.deliverable}
                     </span>
                   </div>
                   <h3 className="mt-6 font-display text-3xl font-bold tracking-tight">{s.title}</h3>

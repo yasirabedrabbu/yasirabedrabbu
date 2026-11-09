@@ -7,7 +7,7 @@ export default function Experience() {
       <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1fr_1.6fr]">
         <div data-reveal className="lg:sticky lg:top-32 lg:self-start">
           <Eyebrow light>Experience</Eyebrow>
-          <h2 id="experience-title" className="font-display text-5xl font-bold tracking-tight md:text-7xl">Where I&apos;ve grown</h2>
+          <h2 id="experience-title" className="text-balance font-display text-5xl font-bold leading-[0.95] tracking-tight md:text-7xl">Where I&apos;ve grown</h2>
           <p className="mt-6 max-w-sm text-on-brand/85">Leading UI design delivery across product, development and QA teams in Agile sprints.</p>
         </div>
         <ol className="relative border-l border-hair-light pl-10">

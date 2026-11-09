@@ -67,7 +67,7 @@ export default function Skills() {
         <div data-reveal className="grid gap-8 md:grid-cols-[1.3fr_1fr] md:items-end">
           <div>
             <Eyebrow light>Skills &amp; tools</Eyebrow>
-            <h2 id="skills-title" className="font-display text-5xl font-bold leading-[0.95] tracking-tight md:text-7xl">
+            <h2 id="skills-title" className="text-balance font-display text-5xl font-bold leading-[0.95] tracking-tight md:text-7xl">
               What I bring <span className="italic text-accent">to the table</span>
             </h2>
           </div>

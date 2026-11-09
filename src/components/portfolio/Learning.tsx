@@ -9,7 +9,7 @@ export default function Learning() {
       <div className="mx-auto max-w-7xl">
         <div data-reveal>
           <Eyebrow>Education &amp; certifications</Eyebrow>
-          <h2 id="learning-title" className="max-w-3xl font-display text-5xl font-bold leading-[0.95] tracking-tight md:text-7xl">Always learning, <span className="italic text-brand">always shipping</span></h2>
+          <h2 id="learning-title" className="max-w-3xl text-balance font-display text-5xl font-bold leading-[0.95] tracking-tight md:text-7xl">Always learning, <span className="italic text-brand">always shipping</span></h2>
         </div>
 
         <div className="mt-16 grid gap-6 lg:grid-cols-[1fr_1.35fr]">

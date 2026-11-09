@@ -10,7 +10,7 @@ export default function CaseStudies() {
         <div data-reveal className="grid gap-8 md:grid-cols-[1.3fr_1fr] md:items-end">
           <div>
             <Eyebrow>Case studies</Eyebrow>
-            <h2 id="work-title" className="font-display text-5xl font-bold leading-[0.95] tracking-tight md:text-7xl">
+            <h2 id="work-title" className="text-balance font-display text-5xl font-bold leading-[0.95] tracking-tight md:text-7xl">
               Problems I&apos;ve <span className="italic text-brand">solved</span>
             </h2>
           </div>

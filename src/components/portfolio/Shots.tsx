@@ -12,7 +12,7 @@ export default function Shots() {
         <div data-reveal className="mb-20 grid gap-8 md:grid-cols-[1.4fr_1fr] md:items-end">
           <div>
             <Eyebrow light>Visual explorations</Eyebrow>
-            <h2 id="shots-title" className="font-display text-5xl font-bold leading-[0.95] tracking-tight md:text-7xl">
+            <h2 id="shots-title" className="text-balance font-display text-5xl font-bold leading-[0.95] tracking-tight md:text-7xl">
               Craft, <span className="italic text-accent">explored</span> in detail
             </h2>
           </div>

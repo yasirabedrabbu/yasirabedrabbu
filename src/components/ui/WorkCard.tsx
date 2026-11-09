@@ -11,7 +11,7 @@ export default function WorkCard({ item, index }: { item: Work; index: number })
     <li data-reveal className="case-card flex">
       <Link
         href={`/work/${item.slug}`}
-        className={`group flex h-full w-full flex-col overflow-hidden rounded-[16px] border border-line bg-bg-white transition-colors duration-300 hover:border-brand ${focus}`}
+        className={`group flex h-full w-full flex-col overflow-hidden rounded-3xl border border-line bg-bg-white transition-colors duration-300 hover:border-brand ${focus}`}
       >
         <div className="relative aspect-[4/3] overflow-hidden border-b border-line">
           <Image
@@ -21,7 +21,7 @@ export default function WorkCard({ item, index }: { item: Work; index: number })
             sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
             className="object-cover transition-transform duration-700 motion-reduce:transition-none group-hover:scale-[1.03]"
           />
-          <span className="absolute left-3 top-3 rounded-[12px] bg-bg/90 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-ink backdrop-blur">
+          <span className="absolute left-3 top-3 rounded-xl bg-bg/90 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-ink backdrop-blur">
             Under NDA
           </span>
         </div>

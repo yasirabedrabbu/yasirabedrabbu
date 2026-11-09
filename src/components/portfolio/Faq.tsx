@@ -16,7 +16,7 @@ export default function Faq() {
       <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1fr_1.5fr]">
         <div data-reveal className="lg:sticky lg:top-28 lg:self-start">
           <Eyebrow>FAQ</Eyebrow>
-          <h2 id="faq-title" className="font-display text-5xl font-bold leading-[0.95] tracking-tight md:text-6xl">Questions, <span className="italic text-brand">answered</span></h2>
+          <h2 id="faq-title" className="text-balance font-display text-5xl font-bold leading-[0.95] tracking-tight md:text-7xl">Questions, <span className="italic text-brand">answered</span></h2>
           <p className="mt-6 max-w-sm text-ink-soft">Everything worth knowing before you and I start working together.</p>
           <div className="mt-10 flex items-center gap-4 rounded-3xl bg-bg-white p-5">
             <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full">
